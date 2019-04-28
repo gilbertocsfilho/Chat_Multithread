@@ -118,9 +118,7 @@ public class ChatServer extends Thread {
             System.out.println(this.nomeCliente + " fechou o chat");
             remove(this.nomeCliente);
         }
-        
-       
-        
+
     }
 
     public void EnviarTodos(PrintStream saida, String acao, String msg) throws IOException {
@@ -128,7 +126,6 @@ public class ChatServer extends Thread {
         while (e.hasMoreElements()) {
 
             PrintStream chat = (PrintStream) e.nextElement();
-
             chat.println(this.nomeCliente + acao + msg);
 
         }
