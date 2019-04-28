@@ -25,7 +25,7 @@ public class ChatClientGui extends Thread {
             BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in));
 
             String meuNome = JOptionPane.showInputDialog("Qual seu nome?:\n");
-      
+
             saida.println(meuNome.toUpperCase());
 
             Thread thread = new ChatClientGui(socket);
