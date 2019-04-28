@@ -21,7 +21,7 @@ public class ChatClient extends Thread {
             System.out.println("Digite o IP do servidor: ");
             String IPServer = sc.nextLine();
 
-            Socket socket = new Socket(IPServer, 5555);
+            Socket socket = new Socket(IPServer, 2525);
 
             PrintStream saida = new PrintStream(socket.getOutputStream());
             BufferedReader teclado = new BufferedReader(new InputStreamReader(System.in));
